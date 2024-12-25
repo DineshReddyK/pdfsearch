@@ -27,7 +27,7 @@ class PDFSearch:
         pdf_files = [f for f in os.listdir(search_dir) if f.endswith('.pdf')]
         print(f'Found {pdf_files} in {search_dir}')
 
-        for i, filename in enumerate(pdf_files):
+        for filename in pdf_files:
             try:
                 document = self._read_pdf(os.path.join(search_dir, filename))
                 documents.append(document)
