@@ -1,5 +1,7 @@
+import os
+import re
+import io
 import numpy as np
-import os, re, io
 from PyPDF2 import PdfReader
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
